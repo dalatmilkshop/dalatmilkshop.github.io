@@ -9,66 +9,96 @@
     <link rel="canonical" href="https://dalatmilkdanang.github.io/" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+        .hero-bg {
+            background-color: #f0fdf4;
+            background-image: radial-gradient(#dcfce7 1px, transparent 1px);
+            background-size: 20px 20px;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-slate-50 text-slate-800">
 
-    <div class="container mx-auto max-w-4xl p-5">
-        <!-- Header -->
-        <header class="text-center py-10 border-b-2 border-green-600 mb-10">
-            <h1 class="text-4xl md:text-5xl font-bold text-green-800">Cẩm Nang Dalatmilk Đà Nẵng</h1>
-            <p class="text-lg text-gray-600 mt-2">Chia sẻ công thức, kinh nghiệm & mẹo hay dành riêng cho người Đà Nẵng</p>
+    <!-- Navbar -->
+    <nav class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-200">
+        <div class="container mx-auto max-w-6xl px-5 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-emerald-700">
+                Dalatmilk <span class="text-emerald-500">Đà Nẵng</span>
+            </a>
+            <a href="https://dalatmilkshop.com" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block bg-emerald-600 text-white font-bold py-2 px-5 rounded-lg hover:bg-emerald-700 transition-colors duration-300">
+                Mua Hàng Ngay
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto max-w-6xl p-5">
+        <!-- Hero Section -->
+        <header class="text-center py-16 md:py-24 hero-bg rounded-2xl mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold text-emerald-800 leading-tight">Cẩm Nang Dalatmilk</h1>
+            <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">Chia sẻ công thức pha chế, kinh nghiệm chọn sữa và mẹo hay dành riêng cho người sành Dalatmilk tại Đà Nẵng.</p>
         </header>
 
         <!-- Main Content - Blog Posts -->
         <main>
-            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Bài Viết Nổi Bật</h2>
+            <h2 class="text-3xl font-bold text-slate-900 mb-10 text-center">Bài Viết Nổi Bật</h2>
 
-            <!-- Post 1 -->
-            <article class="bg-white rounded-lg shadow-md p-6 mb-8 transition hover:shadow-xl">
-                <h3 class="text-2xl font-bold text-green-700 mb-3"><a href="#" class="hover:underline">Bí Quyết Vàng Cho Chủ Quán: Pha Cà Phê Kem Muối Cực "Dính" Với Sữa Dalatmilk</a></h3>
-                <p class="text-gray-700 leading-relaxed">
-                    Bạn là chủ quán cafe tại Đà Nẵng và muốn tạo ra một món "signature"? Hãy thử ngay công thức cà phê kem muối béo ngậy, sánh mịn từ sữa tươi thanh trùng Dalatmilk. Chúng tôi sẽ chỉ cho bạn tỉ lệ vàng... Để đảm bảo nguồn cung ổn định và giá tốt nhất, các chủ quán có thể tham khảo chính sách giá sỉ tại 
-                    <a href="https://dalatmilkshop.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold hover:underline">website chính thức dalatmilkshop.com</a>.
-                </p>
-            </article>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Post 1 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/10b981/ffffff?text=Pha+Chế" alt="Hình ảnh pha chế cà phê" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-emerald-600 bg-emerald-100 py-1 px-3 rounded-full">Dành cho chủ quán</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-4 mb-3 group-hover:text-emerald-700 transition-colors duration-300">Bí Quyết Vàng Pha Cà Phê Kem Muối Cực "Dính" Với Sữa Dalatmilk</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm mb-4">
+                            Tạo ra món "signature" béo ngậy, sánh mịn từ sữa tươi thanh trùng Dalatmilk để thu hút khách hàng tại Đà Nẵng...
+                        </p>
+                        <a href="https://dalatmilkshop.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-emerald-600 hover:text-emerald-800 transition-colors duration-300">Xem chính sách giá sỉ &rarr;</a>
+                    </div>
+                </article>
 
-            <!-- Post 2 -->
-            <article class="bg-white rounded-lg shadow-md p-6 mb-8 transition hover:shadow-xl">
-                <h3 class="text-2xl font-bold text-green-700 mb-3"><a href="#" class="hover:underline">Chọn Sữa Cho Bé Tại Đà Nẵng: So Sánh Nhanh Dalatmilk Thanh Trùng & Tiệt Trùng</a></h3>
-                <p class="text-gray-700 leading-relaxed">
-                    Sữa thanh trùng giữ trọn vị ngon và dinh dưỡng nhưng hạn sử dụng ngắn. Sữa tiệt trùng tiện lợi hơn. Vậy mẹ Đà Nẵng nên chọn loại nào cho bé? Bài viết này sẽ phân tích chi tiết ưu nhược điểm để mẹ lựa chọn dễ dàng... Để được giao sữa date mới nhất tận nhà, mẹ có thể đặt hàng nhanh chóng tại 
-                    <a href="https://dalatmilkshop.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold hover:underline">Dalatmilk Shop Đà Nẵng</a>.
-                </p>
-            </article>
-            
-            <!-- Post 3 -->
-            <article class="bg-white rounded-lg shadow-md p-6 mb-8 transition hover:shadow-xl">
-                <h3 class="text-2xl font-bold text-green-700 mb-3"><a href="#" class="hover:underline">Tự Tay Làm Sữa Chua Uống Vị Dâu Tằm Tại Nhà Ngon Như Ngoài Hàng</a></h3>
-                <p class="text-gray-700 leading-relaxed">
-                    Mùa dâu tằm đã đến! Tận dụng ngay nguồn quả tươi ngon tại Đà Nẵng và sữa chua Dalatmilk để làm món sữa chua uống giải nhiệt, tốt cho tiêu hoá cả nhà đều mê. Công thức cực kỳ đơn giản... Tất cả các sản phẩm sữa chua ăn, sữa chua uống Dalatmilk đều có sẵn tại 
-                    <a href="https://dalatmilkshop.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold hover:underline">cửa hàng online của chúng tôi</a>.
-                </p>
-            </article>
-
+                <!-- Post 2 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/34d399/ffffff?text=Mẹ+và+Bé" alt="Hình ảnh mẹ và bé" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-emerald-600 bg-emerald-100 py-1 px-3 rounded-full">Gia đình</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-4 mb-3 group-hover:text-emerald-700 transition-colors duration-300">So Sánh Nhanh Dalatmilk Thanh Trùng & Tiệt Trùng Cho Bé</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm mb-4">
+                            Sữa nào giữ trọn dinh dưỡng, sữa nào tiện lợi hơn? Phân tích chi tiết để mẹ Đà Nẵng lựa chọn tốt nhất cho con...
+                        </p>
+                         <a href="https://dalatmilkshop.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-emerald-600 hover:text-emerald-800 transition-colors duration-300">Đặt giao sữa tận nhà &rarr;</a>
+                    </div>
+                </article>
+                
+                <!-- Post 3 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/6ee7b7/ffffff?text=Nấu+Ăn" alt="Hình ảnh sữa chua dâu tằm" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-emerald-600 bg-emerald-100 py-1 px-3 rounded-full">Công thức tại nhà</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-4 mb-3 group-hover:text-emerald-700 transition-colors duration-300">Tự Làm Sữa Chua Uống Vị Dâu Tằm Ngon Như Ngoài Hàng</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm mb-4">
+                            Công thức cực đơn giản để có món sữa chua uống giải nhiệt, tốt cho tiêu hoá từ sữa chua Dalatmilk và dâu tằm tươi Đà Nẵng...
+                        </p>
+                        <a href="https://dalatmilkshop.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-emerald-600 hover:text-emerald-800 transition-colors duration-300">Mua nguyên liệu ngay &rarr;</a>
+                    </div>
+                </article>
+            </div>
         </main>
 
         <!-- Footer -->
-        <footer class="text-center mt-10 pt-10 border-t border-gray-300">
-            <p class="text-lg font-bold text-gray-800">Bạn muốn mua sản phẩm Dalatmilk chính hãng tại Đà Nẵng?</p>
-            <p class="text-gray-600 mt-2">Để xem đầy đủ sản phẩm, giá cả và các chương trình khuyến mãi, vui lòng truy cập trang web chính của chúng tôi.</p>
-            <a href="https://dalatmilkshop.com" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-700 transition">
+        <footer class="text-center mt-20 pt-10 border-t border-slate-200">
+            <h3 class="text-2xl font-bold text-slate-800">Mua sản phẩm Dalatmilk chính hãng tại Đà Nẵng?</h3>
+            <p class="text-slate-600 mt-2 max-w-xl mx-auto">Truy cập trang web chính của chúng tôi để xem đầy đủ sản phẩm, giá cả và các chương trình khuyến mãi mới nhất.</p>
+            <a href="https://dalatmilkshop.com" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-emerald-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-emerald-700 transition-transform duration-300 transform hover:scale-105">
                 Ghé Thăm Dalatmilkshop.com
             </a>
-            <div class="mt-6 text-gray-500">
-                <p><strong>Hotline/Zalo Tư Vấn:</strong> <a href="tel:0982733777" class="hover:underline">0982 733 777</a></p>
-                <p><strong>Địa chỉ:</strong> 06B Phan Bội Châu, P. Hải Châu, TP. Đà Nẵng</p>
+            <div class="mt-8 text-slate-500 text-sm">
+                <p><strong>Hotline/Zalo:</strong> <a href="tel:0982733777" class="hover:underline">0982 733 777</a> | <strong>Địa chỉ:</strong> 06B Phan Bội Châu, P. Hải Châu, TP. Đà Nẵng</p>
+                <p class="mt-2">&copy; 2024 Cẩm Nang Dalatmilk Đà Nẵng. Một trang vệ tinh của Dalatmilk Shop.</p>
             </div>
         </footer>
     </div>
