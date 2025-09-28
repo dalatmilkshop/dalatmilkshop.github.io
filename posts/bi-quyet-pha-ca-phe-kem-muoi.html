@@ -36,21 +36,37 @@
         body {
             font-family: 'Be Vietnam Pro', sans-serif;
         }
-        .prose h2 { @apply text-2xl font-bold mt-8 mb-4 text-slate-800; }
-        .prose h3 { @apply text-xl font-semibold mt-6 mb-3 text-slate-700; }
-        .prose p { @apply mb-4 leading-relaxed; }
-        .prose ul { @apply list-disc list-inside mb-4 pl-4; }
-        .prose li { @apply mb-2; }
-        .prose a { @apply text-emerald-600 hover:text-emerald-800; }
-        .prose blockquote { @apply border-l-4 border-emerald-500 pl-4 italic text-slate-600 my-6; }
+        .prose h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: #1e293b; }
+        .prose h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #334155; }
+        .prose p { margin-bottom: 1rem; line-height: 1.6; }
+        .prose ul { list-style-type: disc; list-style-position: inside; margin-bottom: 1rem; padding-left: 1rem; }
+        .prose li { margin-bottom: 0.5rem; }
+        .prose a { color: #059669; text-decoration: none; }
+        .prose a:hover { color: #047857; text-decoration: underline; }
+        .prose blockquote { border-left: 4px solid #10b981; padding-left: 1rem; font-style: italic; color: #475569; margin: 1.5rem 0; }
     </style>
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dalatmilkdanang.github.io/" },
-                { "@type": "ListItem", "position": 2, "name": "Bí Quyết Pha Cà Phê Kem Muối", "item": "https://dalatmilkdanang.github.io/posts/bi-quyet-pha-ca-phe-kem-muoi.html" }
+            "@graph": [
+                {
+                    "@type": "Article",
+                    "headline": "Bí Quyết Pha Cà Phê Kem Muối Với Sữa Dalatmilk",
+                    "description": "Hướng dẫn cách làm cà phê kem muối béo ngậy từ sữa tươi Dalatmilk, dành cho chủ quán và barista tại Đà Nẵng.",
+                    "image": "https://dalatmilkdanang.github.io/images/post01-cover.jpg",
+                    "author": { "@type": "Organization", "name": "Dalatmilk Shop Đà Nẵng" },
+                    "publisher": { "@type": "Organization", "name": "Dalatmilk Shop Đà Nẵng", "logo": { "@type": "ImageObject", "url": "https://dalatmilkdanang.github.io/logo.png" } },
+                    "datePublished": "2024-05-20",
+                    "dateModified": "2024-05-20",
+                    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dalatmilkdanang.github.io/posts/bi-quyet-pha-ca-phe-kem-muoi.html" }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dalatmilkdanang.github.io/" },
+                        { "@type": "ListItem", "position": 2, "name": "Bí Quyết Pha Cà Phê Kem Muối", "item": "https://dalatmilkdanang.github.io/posts/bi-quyet-pha-ca-phe-kem-muoi.html" }
+                    ]
+                }
             ]
         }
         </script>
