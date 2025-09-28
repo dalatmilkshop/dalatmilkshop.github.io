@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dalatmilkdanang.github.io/sitemap.xml
